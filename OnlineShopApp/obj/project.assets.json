@@ -5702,11 +5702,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\golam\\source\\repos\\OnlineShopApp\\OnlineShopApp.csproj",
+      "projectUniqueName": "C:\\Users\\golam\\Google Drive\\Programming\\asp.net\\Project\\OnlineShop\\OnlineShopApp\\OnlineShopApp.csproj",
       "projectName": "OnlineShopApp",
-      "projectPath": "C:\\Users\\golam\\source\\repos\\OnlineShopApp\\OnlineShopApp.csproj",
+      "projectPath": "C:\\Users\\golam\\Google Drive\\Programming\\asp.net\\Project\\OnlineShop\\OnlineShopApp\\OnlineShopApp.csproj",
       "packagesPath": "C:\\Users\\golam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\golam\\source\\repos\\OnlineShopApp\\obj\\",
+      "outputPath": "C:\\Users\\golam\\Google Drive\\Programming\\asp.net\\Project\\OnlineShop\\OnlineShopApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\golam\\AppData\\Roaming\\NuGet\\NuGet.Config",
