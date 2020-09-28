@@ -2,7 +2,7 @@
 
 namespace OnlineShopApp.Data.Migrations
 {
-    public partial class _1st_Migration_Project_Added : Migration
+    public partial class scripts1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
