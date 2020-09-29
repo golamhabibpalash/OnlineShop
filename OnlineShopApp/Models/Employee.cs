@@ -10,7 +10,8 @@ namespace OnlineShopApp.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        
+        public int GenderId { get; set; }
+
         [Display(Name ="Father's Name")]
         public string FatherName { get; set; }
 
@@ -28,5 +29,9 @@ namespace OnlineShopApp.Models
 
         public int NID { get; set; }
         public string NIDScan { get; set; }
+
+        public Gender Gender { get; set; }
+
+
     }
 }

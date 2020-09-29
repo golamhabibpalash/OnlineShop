@@ -5,11 +5,12 @@ using System.Threading.Tasks;
 
 namespace OnlineShopApp.Models
 {
-    public class ProductType
+    public class ShoppingCart
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public ICollection<Brand> Brands { get; set; }
-        public ICollection<Product> Products { get; set; }
+        public int ProductId { get; set; }
+        public int Qty { get; set; }
+
+        public Product Product { get; set; }
     }
 }

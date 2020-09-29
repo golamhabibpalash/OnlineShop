@@ -57,7 +57,7 @@ namespace OnlineShopApp.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ThanaOrUpazilaId,Name,PostCode,CreatedBy,CreatedAt,UpdatedBy,UpdatedAt")] PostOffice postOffice)
+        public async Task<IActionResult> Create([Bind("Id,Name,PostCode,ThanaOrUpazilaId,CreatedBy,CreatedAt,UpdatedBy,UpdatedAt")] PostOffice postOffice)
         {
             if (ModelState.IsValid)
             {
@@ -91,7 +91,7 @@ namespace OnlineShopApp.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,ThanaOrUpazilaId,Name,PostCode,CreatedBy,CreatedAt,UpdatedBy,UpdatedAt")] PostOffice postOffice)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,PostCode,ThanaOrUpazilaId,CreatedBy,CreatedAt,UpdatedBy,UpdatedAt")] PostOffice postOffice)
         {
             if (id != postOffice.Id)
             {

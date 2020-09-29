@@ -57,7 +57,7 @@ namespace OnlineShopApp.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,DivisionId,Name,CreatedBy,CreatedAt,UpdatedBy,UpdatedAt")] District district)
+        public async Task<IActionResult> Create([Bind("Id,Name,DivisionId,CreatedBy,CreatedAt,UpdatedBy,UpdatedAt")] District district)
         {
             if (ModelState.IsValid)
             {
@@ -91,7 +91,7 @@ namespace OnlineShopApp.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,DivisionId,Name,CreatedBy,CreatedAt,UpdatedBy,UpdatedAt")] District district)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,DivisionId,CreatedBy,CreatedAt,UpdatedBy,UpdatedAt")] District district)
         {
             if (id != district.Id)
             {

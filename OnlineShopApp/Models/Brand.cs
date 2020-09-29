@@ -13,8 +13,12 @@ namespace OnlineShopApp.Models
         [Display(Name ="Brand Name")]
         public string BrandName { get; set; }
 
+        [Display(Name ="Product Type")]
+        public int ProductTypeId { get; set; }
+
         public byte[] BrandLogo { get; set; }
 
+        public ProductType ProductType { get; set; }
         public ICollection<Product> Products { get; set; }
     }
 }

@@ -18,12 +18,6 @@
             @Html.DisplayFor(model => model.Name)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Division)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Division.Id)
-        </dd class>
-        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.CreatedBy)
         </dt>
         <dd class = "col-sm-10">
@@ -47,6 +41,12 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.UpdatedAt)
         </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Division)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Division.Id)
+        </dd class>
     </dl>
     
     <form asp-action="Delete">

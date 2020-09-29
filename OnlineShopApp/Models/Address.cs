@@ -15,13 +15,12 @@ namespace OnlineShopApp.Models
         public int EmployeeId { get; set; }
         public int CustomerId { get; set; }
         public string MyAddress { get; set; }
+        public int SupplierId { get; set; }
 
         public Division Division { get; set; }
         public District District { get; set; }
         public ThanaOrUpazila ThanaOrUpazila { get; set; }
         public PostOffice PostOffice { get; set; }
-        public Employee Employee { get; set; }
-        public Customer Customer { get; set; }
 
         //Type 1=PresentAddress Type 2=Permanent Address
         public int Type { get; set; }

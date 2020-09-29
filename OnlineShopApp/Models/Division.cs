@@ -11,8 +11,6 @@ namespace OnlineShopApp.Models
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public ICollection<District> Districts { get; set; }
-
         public string CreatedBy { get; set; }
         public DateTime CreatedAt { get; set; }
         public string UpdatedBy { get; set; }

@@ -10,10 +10,7 @@ namespace OnlineShopApp.Models
     {
         public int Id { get; set; }
         public int DistrictId { get; set; }
-
         public string Name { get; set; }
-
-        public ICollection<PostOffice> PostOffices { get; set; }
 
         public District District { get; set; }
 

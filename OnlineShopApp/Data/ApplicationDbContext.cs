@@ -17,5 +17,6 @@ namespace OnlineShopApp.Data
         public DbSet<OnlineShopApp.Models.District> District { get; set; }
         public DbSet<OnlineShopApp.Models.ThanaOrUpazila> ThanaOrUpazila { get; set; }
         public DbSet<OnlineShopApp.Models.PostOffice> PostOffice { get; set; }
+
     }
 }

@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OnlineShopApp.Data;
 
-namespace OnlineShopApp.Data.Migrations
+namespace OnlineShopApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200929183109_script2")]
+    partial class script2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -399,7 +401,7 @@ namespace OnlineShopApp.Data.Migrations
             modelBuilder.Entity("OnlineShopApp.Models.District", b =>
                 {
                     b.HasOne("OnlineShopApp.Models.Division", "Division")
-                        .WithMany("Districts")
+                        .WithMany()
                         .HasForeignKey("DivisionId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -408,7 +410,7 @@ namespace OnlineShopApp.Data.Migrations
             modelBuilder.Entity("OnlineShopApp.Models.PostOffice", b =>
                 {
                     b.HasOne("OnlineShopApp.Models.ThanaOrUpazila", "ThanaOrUpazila")
-                        .WithMany("PostOffices")
+                        .WithMany()
                         .HasForeignKey("ThanaOrUpazilaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -417,7 +419,7 @@ namespace OnlineShopApp.Data.Migrations
             modelBuilder.Entity("OnlineShopApp.Models.ThanaOrUpazila", b =>
                 {
                     b.HasOne("OnlineShopApp.Models.District", "District")
-                        .WithMany("ThanaOrUpazilas")
+                        .WithMany()
                         .HasForeignKey("DistrictId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
