@@ -11,7 +11,7 @@ namespace OnlineShopApp.Models
         public int OrderId { get; set; }
         public int ProductId { get; set; }
         public int Qty { get; set; }
-        public int Discount { get; set; }
+        public double Discount { get; set; }
 
         public Order Order { get; set; }
         

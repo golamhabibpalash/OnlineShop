@@ -19,5 +19,6 @@ namespace OnlineShopApp.Models
         public string Email { get; set; }
 
         public Address Address { get; set; }
+        public ICollection<Product> Products { get; set; }
     }
 }

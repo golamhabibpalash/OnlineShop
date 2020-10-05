@@ -12,6 +12,5 @@ namespace OnlineShopApp.Models
 
         [Required, StringLength(30)]
         public string ColorName { get; set; }
-        public ICollection<Product> Products { get; set; }
     }
 }

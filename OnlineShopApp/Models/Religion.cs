@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace OnlineShopApp.Models
 {
-    public class Gender
+    public class Religion
     {
         public int Id { get; set; }
 
-        [Display(Name = "Gender Name"),StringLength(10)]
-        public string GenderName { get; set; }
+        [Display(Name = "Religion"), StringLength(10)]
+        public string ReligionName { get; set; }
     }
 }

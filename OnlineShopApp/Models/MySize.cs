@@ -15,7 +15,5 @@ namespace OnlineShopApp.Models
 
         public string ShortName { get; set; }
 
-        public ICollection<Product> Products { get; set; }
-
     }
 }
