@@ -20,14 +20,23 @@ namespace OnlineShopApp.Models
         [Display(Name ="Unit Price")]
         public int ProductPrice { get; set; }
 
+        public double Discount { get; set; }
+
         [Display(Name = "Product Color")]
         public int MyColorId { get; set; }
 
         [Display(Name = "Product Size")]
         public int MySizeId { get; set; }
+
+        [Display(Name = "Brand")]
         public int BrandId { get; set; }
+
+        [Display(Name ="Product Type")]
         public int ProductTypeId { get; set; }
+
+        [Display(Name = "Supplier")]
         public int SupplierId { get; set; }
+
         public bool IsAvailable { get; set; }
 
         [Display(Name ="Product Image")]

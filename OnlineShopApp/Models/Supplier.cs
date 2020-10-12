@@ -12,7 +12,10 @@ namespace OnlineShopApp.Models
         public string Name { get; set; }
         public int AddressId { get; set; }
 
-        [Range(01300000000, 01999999999)]
+        [Display(Name ="Company"),StringLength(20)]
+        public string CompanyName { get; set; }
+
+        [Display(Name ="Phone"),Range(01300000000, 01999999999)]
         public int PhoneNo { get; set; }
 
         [EmailAddress]
@@ -20,5 +23,11 @@ namespace OnlineShopApp.Models
 
         public Address Address { get; set; }
         public ICollection<Product> Products { get; set; }
+
+
+        public string CreatedBy { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public string UpdatedBy { get; set; }
+        public DateTime UpdatedAt { get; set; }
     }
 }

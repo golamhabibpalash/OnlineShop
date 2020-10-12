@@ -11,9 +11,15 @@ namespace OnlineShopApp.Models
     {
 
         public int Id { get; set; }
+
+        [Required, StringLength(25)]
         public string Name { get; set; }
+
+        [Required, StringLength(10)]
         public string UserName { get; set; }
         public string Password { get; set; }
+
+        [Display(Name="Gender")]
         public int GenderId { get; set; }
 
         [Range(01300000000, 01999999999)]
@@ -30,5 +36,10 @@ namespace OnlineShopApp.Models
         public string NIDScan { get; set; }
         public Gender Gender { get; set; }
         public ICollection<Order> Orders { get; set; }
+
+        public string CreatedBy { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public string UpdatedBy { get; set; }
+        public DateTime UpdatedAt { get; set; }
     }
 }

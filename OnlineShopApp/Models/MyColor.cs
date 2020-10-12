@@ -10,7 +10,12 @@ namespace OnlineShopApp.Models
     {
         public int Id { get; set; }
 
-        [Required, StringLength(30)]
+        [Required, StringLength(20)]
         public string ColorName { get; set; }
+
+        public string CreatedBy { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public string UpdatedBy { get; set; }
+        public DateTime UpdatedAt { get; set; }
     }
 }

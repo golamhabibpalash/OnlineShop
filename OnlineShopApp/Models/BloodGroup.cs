@@ -13,5 +13,10 @@ namespace OnlineShopApp.Models
         [Display(Name = "Blood Group"),StringLength(5)]
         public string BloodGroupName { get; set; }
 
+        public string CreatedBy { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public string UpdatedBy { get; set; }
+        public DateTime UpdatedAt { get; set; }
+
     }
 }
