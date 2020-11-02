@@ -1,6 +1,0 @@
-01. Product
-02. Brand
-03. ProductTypes
-04. Color
-05. Size
-06. Gender

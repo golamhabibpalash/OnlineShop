@@ -255,3 +255,4 @@ C:\Users\golam\Google Drive\Programming\asp.net\Project\OnlineShop\OnlineShopApp
 C:\Users\golam\Google Drive\Programming\asp.net\Project\OnlineShop\OnlineShopApp\obj\Debug\netcoreapp3.1\Razor\Views\MySizes\Details.cshtml.g.cs
 C:\Users\golam\Google Drive\Programming\asp.net\Project\OnlineShop\OnlineShopApp\obj\Debug\netcoreapp3.1\Razor\Views\MySizes\Edit.cshtml.g.cs
 C:\Users\golam\Google Drive\Programming\asp.net\Project\OnlineShop\OnlineShopApp\obj\Debug\netcoreapp3.1\Razor\Views\MySizes\Index.cshtml.g.cs
+C:\Users\golam\Google Drive\Programming\asp.net\Project\OnlineShop\OnlineShopApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout1.cshtml.g.cs
